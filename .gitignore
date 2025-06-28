@@ -1,0 +1,43 @@
+# PlatformIO core system files
+.pio/
+.vscode/
+
+# Compiled object files
+*.elf
+*.bin
+*.map
+*.d
+*.o
+
+# Backup & temp files
+*.swp
+*.bak
+*.tmp
+
+# IDE specific
+*.idea/
+*.DS_Store
+
+# Gradle
+.gradle/
+build/
+
+# Local config
+local.properties
+
+# IDE config
+.idea/
+*.iml
+
+# OS junk
+.DS_Store
+
+# Log, temp, and crash files
+*.log
+*.tmp
+
+# Generated files
+captures/
+
+# Sign key files
+*.keystore
