@@ -27,7 +27,7 @@
   - | Sensor        | Library       |
     | ------------- | ------------- |
     | DHT22  | Adafruit DHT sensor library|
-    | TDS Meter  | DFRobot GravityTDS  |
+    | TDS Meter  | Analog reading (No library)  |
     | Water Level Sensor | Analog reading (No Library)|
     | pH Meter | Analog reading (No Library) |
 
