@@ -1,12 +1,15 @@
 #include <Arduino.h>
 #include <TDS.h>
 #include <DHTSensor.h>
+#include <WaterLevel.h>
 
 float temp;
 float humidity;
 float tdsValue;
 float voltage;
 float rawValue;
+float waterLevel;
+bool needRefil;
 
 void setup() {
   // put your setup code here, to run once:
@@ -19,6 +22,8 @@ void loop() {
   // put your main code here, to run repeatedly:
   readDHT22(temp, humidity);
   readTDS(tdsValue, voltage, temp, rawValue);
+  readWaterLevel(waterLevel);
+  checkLoworHigh(waterLevel, needRefil);
   
   Serial.print("TDS Value : ");
   Serial.print(tdsValue);
@@ -33,7 +38,7 @@ void loop() {
   Serial.print("Raw Value : ");
   Serial.print(rawValue);
 
-  Serial.print(" | ");
+  Serial.println(" | ");
 
   Serial.print("Temp : ");
   Serial.print(temp);
@@ -43,8 +48,17 @@ void loop() {
   Serial.print("Humidity : ");
   Serial.println(humidity);
 
+  Serial.println(" | ");
+  
+  Serial.print("Water Level : ");
+  Serial.print(waterLevel);
+
+  Serial.print(" | ");
+
+  Serial.print("Need Refil : ");
+  Serial.println(needRefil);
   Serial.println("=========================");
-  delay(2000);
+  delay(4000);
 }
 
 
