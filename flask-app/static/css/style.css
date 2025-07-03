@@ -1,0 +1,117 @@
+
+
+.off-screen-menu{
+    background-color: rgb(238, 241, 240);
+    height: 100vh;
+    width: 100%;
+    max-width: 25vw;
+    min-width: 250px;
+    position: fixed;
+    left: -200vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+
+.off-screen-menu.active{
+    left: 0;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    background-color: rgb(231, 201, 201);
+    display: flex;
+    justify-content: left;
+    gap: 3vw;
+}
+
+.hamburger-button{
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+    position: relative;
+}
+header .Title{
+    font-size: 3.5vh;}
+
+body .welcome-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+
+}
+.hamburger-button span{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(34, 202, 224);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3 ease;
+}
+
+.hamburger-button span:nth-child(1){
+    top: 25%;
+}
+
+.hamburger-button span:nth-child(3){
+    top: 75%;
+}
+
+.hamburger-button.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger-button.active span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(315deg);
+}
+
+.off-screen-menu .Name{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 4.5vh;
+    font-weight: bold;
+    color: rgb(42, 128, 168);
+    text-decoration: none;
+    font-size: 4.5vh;
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 8px;
+    
+
+}
+
+.off-screen-menu .invisible{
+    min-width: 25vw;
+    min-height: 10vh;
+}
+
+.off-screen-menu a {
+  color: rgb(42, 128, 168);
+  text-decoration: none;
+  font-size: 4.5vh;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.off-screen-menu a:hover {
+  background-color: #333;
+  color: #0f0;
+}
+
+

@@ -18,7 +18,9 @@ void castingData(String jsonData) {
     
     if (client) {
         Serial.println("Client connected!");
-
+        Serial.println("Connected to WiFi!");
+        Serial.print("ESP32 Local IP: ");
+        Serial.println(WiFi.localIP());
         // Wait for client request data (optional if you want to detect a request string)
         while (client.connected()) {
             if (client.available()) {
@@ -36,4 +38,5 @@ void castingData(String jsonData) {
         }
     }
 }
+
 

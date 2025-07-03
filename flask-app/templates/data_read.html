@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydroponics Manager</title>
+    
+    
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+<body>
+    <div class="off-screen-menu">
+        <div class="invisible"></div>
+        <div class="Name">Hydroponics Manager</div>
+        <a href="/">Home</a>
+        <a href="/ota">OTA Update</a>
+
+    </div>
+
+    <header>
+        <div class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <h2>Tempereture 🌡: <span id="temp">0</span></h2>
+    <h2>Humidity ⛈: <span id="humidity">0</span></h2>
+    <h2>TDS Value 💧: <span id="tds">0</span></h2>
+    <h2>pH Value ⚡: <span id="pH">0</span></h2>
+    <h2>Need Refil ⁉: <span id="need-refil">True</span></h2>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

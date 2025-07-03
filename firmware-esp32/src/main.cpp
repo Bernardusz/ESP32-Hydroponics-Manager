@@ -8,7 +8,8 @@
 
 HydroData sensorData;
 
-unsigned long previousMillis = 0;
+unsigned long previousMillisRead = 0;
+unsigned long previousMillisSend = 0;
 const long intervalRead = 2000;
 const long intervalSendData = 5000;
 
@@ -16,9 +17,10 @@ void serialPrint();
 
 void setup() {
   // put your setup code here, to run once:
+  Serial.begin(115200);
   initWifi();
   initDHT22();
-  Serial.begin(115200);
+  
   
 }
 
@@ -26,8 +28,8 @@ void loop() {
   // put your main code here, to run repeatedly:
   unsigned long currentMillis = millis();
 
-  if (currentMillis - previousMillis >= intervalRead){
-    previousMillis = currentMillis;
+  if (currentMillis - previousMillisRead >= intervalRead){
+    previousMillisRead = currentMillis;
     readDHT22(sensorData.temp, sensorData.humidity);
     readTDS(sensorData.tdsValue, sensorData.voltage, 
             sensorData.temp, sensorData.rawValue);
@@ -36,13 +38,10 @@ void loop() {
     serialPrint();
   }
   
-  if (currentMillis - previousMillis >= intervalSendData){
-    String jsonData = createJson(sensorData);
-    castingData(jsonData);
-  }
-  
-  
 
+  String jsonData = createJson(sensorData);
+  castingData(jsonData);
+  
 }
 
 void serialPrint(){
