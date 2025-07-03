@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "TDS.h"
-#include <config.h>
+#include "config.h"
 const float temporaryTemp = 29.8;
 void readTDS(float& tdsValue, float& voltage, float temp, float& rawValue){
     rawValue = analogRead(tdsPIN);

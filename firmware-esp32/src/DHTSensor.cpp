@@ -1,5 +1,5 @@
 #include "DHT.h"
-#include <config.h>
+#include "config.h"
 
 // put function declarations here:
 DHT dht(DHTPIN, DHTTYPE);

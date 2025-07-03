@@ -1,6 +1,6 @@
 #include <Arduino.h>
 #include "WaterLevel.h"
-#include <config.h>
+#include "config.h"
 
 void readWaterLevel(float& waterLevel){
     waterLevel = analogRead(waterLevelPin);
