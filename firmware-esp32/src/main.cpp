@@ -31,7 +31,7 @@ void loop() {
   if (currentMillis - previousMillisRead >= intervalRead){
     previousMillisRead = currentMillis;
     readDHT22(sensorData.temp, sensorData.humidity);
-    readTDS(sensorData.tdsValue, sensorData.voltage, 
+    readAverageTDS(sensorData.tdsValue, sensorData.voltage, 
             sensorData.temp, sensorData.rawValue);
     readWaterLevel(sensorData.waterLevel);
     checkLoworHigh(sensorData.waterLevel, sensorData.needRefil);

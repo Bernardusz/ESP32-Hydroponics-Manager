@@ -10,5 +10,25 @@ extern const int DHTPIN;
 extern const int waterLevelPin;
 extern const char* ssid;
 extern const char* password;
+extern const int pHPIN;
+
+struct PPMnVoltage {
+    const float V1;    // Air Isi Ulang
+    const float V2;    // Tap Water
+    const float V3;    // Low Nutrient
+    const float V4;    // Medium Nutrient
+    const float V5;    // High Nutrient
+    const float V6;
+
+    const float PPM1;
+    const float PPM2;
+    const float PPM3;
+    const float PPM4;
+    const float PPM5;
+    const float PPM6;
+
+};
+
+
 
 #endif

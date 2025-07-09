@@ -9,6 +9,7 @@ String createJson(HydroData sensorData){
     doc["tds"] = sensorData.tdsValue;
     doc["pH"] = "Placeholder";
     doc["Need_refil"] = sensorData.needRefil;
+    doc["voltage"] = sensorData.voltage;
 
     String output;
     serializeJson(doc, output);
