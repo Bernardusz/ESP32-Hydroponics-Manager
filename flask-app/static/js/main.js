@@ -16,7 +16,9 @@ function fetchData(){
             document.getElementById('tds').innerText= data.tds;
             document.getElementById('pH').innerText = data.pH;
             document.getElementById('need-refil').innerText = data.Need_refil;
-            document.getElementById('voltage').innerText = data.voltage;
+            document.getElementById('voltage-tds').innerText = data.voltageTDS;
+            document.getElementById('rawvalue-ph').innerText = data.rawValuePH;
+            document.getElementById('voltage-ph').innerText = data.voltagePH;
         })
         .catch(err => console.error('Fetch Failed',err));    
 }

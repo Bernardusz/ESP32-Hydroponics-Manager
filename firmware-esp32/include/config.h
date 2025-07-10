@@ -18,7 +18,7 @@ struct PPMnVoltage {
     const float V3;    // Low Nutrient
     const float V4;    // Medium Nutrient
     const float V5;    // High Nutrient
-    const float V6;
+    const float V6;    // Overclock
 
     const float PPM1;
     const float PPM2;
@@ -28,6 +28,15 @@ struct PPMnVoltage {
     const float PPM6;
 
 };
+
+struct pHSetup {
+    const float voltage1;
+    const float voltage2;
+
+    const float pH1;
+    const float pH2;
+};
+
 
 
 

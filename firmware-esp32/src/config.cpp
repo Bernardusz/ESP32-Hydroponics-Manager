@@ -9,3 +9,4 @@ const char* password = "SecretAF123";
 const int pHPIN = 35;
 
 PPMnVoltage dataPPMnVoltage = {0.32, 0.63, 1.80, 1.85, 2.17, 2.23, 64, 127, 697, 965, 1230, 1800};
+pHSetup datapH = {2.315, 2.935, 6.9, 4.33};

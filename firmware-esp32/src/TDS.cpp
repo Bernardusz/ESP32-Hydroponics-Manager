@@ -2,8 +2,6 @@
 #include "TDS.h"
 #include "config.h"
 
-const float temporaryTemp = 27.9;
-
 extern PPMnVoltage dataPPMnVoltage;
 
 void readTDS(float& tdsValue, float& voltage, float temp, float& rawValue) {
@@ -43,7 +41,7 @@ void readTDS(float& tdsValue, float& voltage, float temp, float& rawValue) {
     float rawTDSValue = A * voltage + B;
 
     // Temperature compensation
-    tdsValue = rawTDSValue * (1.0 + 0.02 * (temporaryTemp - 25));
+    tdsValue = rawTDSValue * (1.0 + 0.02 * (temp - 25));
 }
 
 void readAverageTDS(float& tdsValue, float& voltage, float temp, float& rawValue){

@@ -6,10 +6,14 @@ struct HydroData{
   float temp;
   float humidity;
   float tdsValue;
-  float voltage;
-  float rawValue;
+  float voltageTDS;
+  float rawValueTDS;
   float waterLevel;
   bool needRefil;
+  float voltagePH;
+  float rawValuePH;
+  float pHValue;
+
 };
 
 #endif
