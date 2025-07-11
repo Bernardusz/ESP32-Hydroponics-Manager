@@ -109,8 +109,8 @@ function cursedWarSpeech(){
         msg.rate = 0.9;
         speechSynthesis.speak(msg);
     const speech = document.getElementById('warProclamation');
-    speech.innerText = "While fighting in the Kugu Jumo servant - Hungarian war, the G N D and 5 V formed an unholy alliance. striking down a SD Card module that was nurtured from 3 damn A M to 8 A M. Moral: keeps unbroken.";
-    
+    speech.innerText = "While fighting in the Kugu Jumo servant - Hungarian war, the G N D and 5 V formed an unholy alliance. Striking down a SD Card module that was nurtured from 3 damn A M to 8 A M. Moral: keeps unbroken.";
+    speech.style.display = "block";
     
 }
 setInterval(fetchData, 5000);
