@@ -7,6 +7,7 @@
 #include "CommFlask.h"
 #include "PHMeter.h"
 #include "config.h"
+#include <SD.h>
 
 HydroData sensorData;
 extern pHSetup datapH;
@@ -14,7 +15,7 @@ extern pHSetup datapH;
 unsigned long previousMillisRead = 0;
 unsigned long previousMillisSend = 0;
 const long intervalRead = 2000;
-const long intervalSendData = 5000;
+const long intervalWrite = 1000 * 60 * 5; // 1 sec x 60 x 5 = 5 min
 
 void setup() {
   // put your setup code here, to run once:
@@ -23,10 +24,14 @@ void setup() {
   initDHT22();
   calibratePH(datapH.voltage1, datapH.voltage2, 
               datapH.pH1, datapH. pH2);
+  initSD();
+
+  
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+  
   unsigned long currentMillis = millis();
 
   if (currentMillis - previousMillisRead >= intervalRead){
@@ -38,10 +43,7 @@ void loop() {
     checkLoworHigh(sensorData.waterLevel, sensorData.needRefil);
     averagePH(sensorData.pHValue, sensorData.rawValuePH, sensorData.voltagePH);
   }
-  
-
   String jsonData = createJson(sensorData);
-  castingData(jsonData);
-  
+  handleClient(jsonData);
 }
 

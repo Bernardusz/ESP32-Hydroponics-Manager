@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body onload="">
+        <div class="off-screen-menu">
+            <div class="invisible"></div>
+            <div class="Name">Hydroponics Manager</div>
+            <a href="/data">Data View</a>
+            <a href="/data_list">Easter Egg</a>
+
+        </div>
+
+        <header>
+        <div class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </header>
+
+        <div id="fileList">
+
+        </div>
+
+        <div id="warReport" style="margin: 20px; padding: 10px; border: 2px dashed red; border-radius: 12px; text-align: center;">
+            <p>⚠️ SD Card Status: <strong style="color:red;">Destroyed in Battle</strong></p>
+            <div id="warProclamation" style="display: none;"></div>
+            <button onclick="cursedWarSpeech()">Hear War Report</button>
+        </div>
+
+
+        <button id="addbutton"></button>
+
+        <div id="createFileSection" style="display: none;">
+            <input type="text" id="newFileName" placeholder="New File Name Here">
+            <button onclick="addNewFile()"></button>
+        </div>
+        
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    </body>
+</html>

@@ -114,4 +114,10 @@ body .welcome-text{
   color: #0f0;
 }
 
-
+button .addbutton{
+    position: fixed;
+    bottom: 0vh;
+    right: 0vh;
+    min-height: 0.5vh;
+    min-width: 0.5vw;
+}

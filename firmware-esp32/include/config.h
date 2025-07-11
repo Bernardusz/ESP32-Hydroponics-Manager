@@ -11,6 +11,7 @@ extern const int waterLevelPin;
 extern const char* ssid;
 extern const char* password;
 extern const int pHPIN;
+extern const int CSPin;
 
 struct PPMnVoltage {
     const float V1;    // Air Isi Ulang
