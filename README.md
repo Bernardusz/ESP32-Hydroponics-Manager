@@ -45,4 +45,5 @@
 
 ## Remember 🌠!
 > *"Sometimes the biggest idea comes from idling around and being bored !"* - Made by [**Bernardusz**](https://github.com/Bernardusz), a 10th grader bored in a holiday
+---
 > Made while joking about *"The Qing Empire has called us into the Kugu Jumo servant - Hungarian war"*
