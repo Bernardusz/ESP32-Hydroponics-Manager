@@ -7,7 +7,7 @@
 - TDS (PPM) sensor monitoring
 - Water level detection
 - Data sent via serial to Java Android app
-- SD Card data logging (The SD card module is broken 🐧💀)
+- (The SD card module is broken so no saving data 🐧💀)
 
 ## 🖨 Hardware List 
 - ESP32 CP2102 38 Pin
