@@ -1,6 +1,8 @@
 # 🌱 ESP32-Hydroponics-Manager
 
 > An IoT-based hydroponics monitoring system using ESP32
+> 
+> Youtube Vid: https://youtu.be/xbaBJFVSLGI
 
 ## 📊 Features (MVP)
 - Real-time pH sensor reading
