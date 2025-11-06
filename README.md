@@ -45,6 +45,12 @@
 ## 📃 License 
 > MIT License - see [License](LICENSE)
 
+## 📔 Summary & Current condition
+> So in setting up the ESP32 and sensor in my dad's warehouse, the TDS Sensor broke, and because of the hecticness of my dad's schedule, the pH sensor and ESP are left with no use 💀🐧<br><br>
+> Even though in the end the project doesn't come close to production, I learned a lot. From embedded quirks to how fragile hardware (sensors and modules) is, and most importantly, I learned grit.<br><br>
+> I recalibrated the TDS Sensor (Even though in the end it's broken 🐧💀) multiple times with my broken PC USB ports emitting electricity, how I turned my bedroom into a mini science lab for calibration, and how I broke multiple modules and sensors in one single project 💀🐧<br><br>
+> TLDR : I broke stuff, I lost money, I gained experience 🐧💀
+
 ## Remember 🌠!
 > *"Sometimes the biggest idea comes from idling around and being bored !"* - Made by [**Bernardusz**](https://github.com/Bernardusz), a 10th grader bored in a holiday
 ---
