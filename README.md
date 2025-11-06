@@ -40,7 +40,15 @@
 3. 📲 Connect to ESP32's wifi and start the flask app
 
 ## 📷 Doccumentation
-> To be added in the future
+
+| ![](docs/ESP32-Hydroponics-Manager_Documentation-65.jpg)  | ![](docs/ESP32-Hydroponics-Manager_Documentation-49.jpg) |
+| ---------------- | ----------------- |
+| ![](docs/ESP32-Hydroponics-Manager_Documentation-1.jpg)  | ![](docs/ESP32-Hydroponics-Manager_Documentation-10.jpg) |
+
+> Full documentation: [Documentation](docs/) <br>
+
+### Fun Fact 🐧
+> Before this project, I practiced soldering by trying to fix my broken controller, controller still broken after ~10 hours of soldering 🐧💀
 
 ## 📃 License 
 > MIT License - see [License](LICENSE)
